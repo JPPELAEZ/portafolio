@@ -1,0 +1,78 @@
+/* src/features/Notes/notes.css */
+
+.notes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.notes-form input,
+.notes-form select {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.notes-form button {
+  padding: 10px 15px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.notes-form button:hover {
+  background-color: #4338ca;
+}
+
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.note-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.note-card:hover {
+  transform: scale(1.02);
+}
+
+.note-card h2 {
+    color: black;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.note-card p {
+  color: #555;
+}
+
+.note-card span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #4f46e5;
+}
+
+.note-card button {
+  display: block;
+  margin-top: 10px;
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
